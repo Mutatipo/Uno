@@ -1,0 +1,89 @@
+Neal Stephenson
+Snow Crash
+
+Douglas Richard Hofstadter
+un eterno y gracil bucle 
+
+True names
+Vernor vinge
+
+
+Isaac Asimov
+
+Github
+-----
+git init
+
+
+Linux
+------
+ln -s <- crea un acceso directo
+echo <- muestra en pantalla el texto que siga despues de echo -print-
+date <- da la fecha
+cal <- imprime un calendario
+man <comando> <- muestra el manueal del uso del comando
+pwd <- muestra el escritorio donde se encuentra
+history <- muestra el historial de las ultimas 500 ordenes a la terminal
+cat <- abre archivos
+chown <- cambia el propietario de unfichero
+chmod <- cambia los permisos de un fichero
+touch <- crea un archivo, si existe lo actualiza
+whereis <- muestra la ubicacion de un comando u aplicacion
+whatis <- que hace un comando
+seq <- da una secuencia de numeros
+
+
+
+
+nano <- es el editor de archivos por defecto en archlinux
+mount <- monta una unidad
+pkill x <- matar un proceso
+top y htop <- visor de procesos
+xev <- Reconoce la informacion de entrada de teclado y mouse, los botones, scroll, X y Y del mouse... etc.
+alsamixer <- control de volumen en consola
+pstree <- arbol de procesos
+journalctl <- muestra los ultimos fallos
+systemctl <- lo que se ejecuta, STATUS, da la situacion de determinado proceso
+timedatectl status <- da la informacion de la hora, el formato y como esta configurado
+sudo su <-cambia de usuario a root
+tar -x (nombre completo del archivo) -> lo descomprime y compila
+unrar x <archivo a descomprimir> <directorio donde lo va a descomprimir>
+
+
+#### # #####
+#    #   #
+# ## #   #
+#### #   # 
+
+
+Conectando a github por SSH
+------------------
+
+# los siguientes son configuraciones de usuario
+git config --global user.name "nombre del personaje"
+git config --global user.email "email del personaje"
+
+
+Crer una cuenta en SSH <- bajar el repositorio que genera las llaves
+ssh-keygen -t rsa -C "correo en git"
+---------> xclip -sel clip < ~/.ssh/id_rsa.pub ---- bajar repositorio para portapapeles, no es necesario, se puede usar tanto cat, nano... etc, esta es la forma con menos clicks.
+
+Configurando repositorios desde consola
+------------------------------------
+
+git init <- abre aqui un branch, la carpeta se empieza a comportar como un repositorio aun no conectado.
+
+git remote add origin git@github.com:Mutatipo/Uno.git <-- define el origen del repositorio en github, a donde se van a enviar mis archivos
+
+
+git commit -m "siguientes repos"
+git add <archivo a pasar al carril de envios> <-- agrega un archivo al carill
+
+
+git status <- Muestra el estaus te git "si hay archivos para bajar o subir o si hay conectados"
+
+git push origin master <- manda mis archivos desde la computadora, hasta los repositorios en github
+
+git pull origin master <- trae los archivos del repositorio oficial a neron
+
+
