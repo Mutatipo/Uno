@@ -76,8 +76,8 @@ git init <- abre aqui un branch, la carpeta se empieza a comportar como un repos
 git remote add origin git@github.com:Mutatipo/Uno.git <-- define el origen del repositorio en github, a donde se van a enviar mis archivos
 
 
-git commit -m "siguientes repos"
 git add <archivo a pasar al carril de envios> <-- agrega un archivo al carill
+git commit -m "siguientes repos" <- necesario hacer un comentario antes de hacer cualquier cambio.
 
 
 git status <- Muestra el estaus te git "si hay archivos para bajar o subir o si hay conectados"
@@ -85,5 +85,15 @@ git status <- Muestra el estaus te git "si hay archivos para bajar o subir o si 
 git push origin master <- manda mis archivos desde la computadora, hasta los repositorios en github
 
 git pull origin master <- trae los archivos del repositorio oficial a neron
+
+git add . <- sube todos los archivos
+
+BRANCHES
+---------
+
+git branch  #Nombre de la rama# <- Crea una rama
+git branch <- en que rama esta y cuantas ramas existen
+git checkout #nombre de la rama# <- cambia a essa rama
+
 
 
